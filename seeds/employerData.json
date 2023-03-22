@@ -1,6 +1,6 @@
 [
     {
-      "Company name": "Acme Inc.",
+      "Companyname": "1Acme Inc.",
       "Job_Title": "Software Developer",
       "Salary_Range": "$80,000 - $100,000",
       "Office_Location": "San Francisco, CA",
@@ -8,7 +8,7 @@
       "Description": "Develop and maintain software applications for Acme's enterprise customers."
     },
     {
-      "Company name": "Global Industries",
+      "Companyname": "Global Industries",
       "Job_Title": "Marketing Manager",
       "Salary_Range": "$90,000 - $120,000",
       "Office_Location": "New York, NY",
@@ -16,7 +16,7 @@
       "Description": "Plan and execute marketing campaigns for Global Industries' portfolio of products."
     },
     {
-      "Company name": "XYZ Corporation",
+      "Companyname": "XYZ Corporation",
       "Job_Title": "Data Analyst",
       "Salary_Range": "$60,000 - $80,000",
       "Office_Location": "Chicago, IL",
@@ -24,7 +24,7 @@
       "Description": "Analyze data and provide insights to support decision making across XYZ's business units."
     },
     {
-      "Company name": "ABC Enterprises",
+      "Companyname": "ABC Enterprises",
       "Job_Title": "Human Resources Manager",
       "Salary_Range": "$100,000 - $130,000",
       "Office_Location": "Los Angeles, CA",
@@ -32,7 +32,7 @@
       "Description": "Develop and implement HR policies and procedures to support ABC's diverse workforce."
     },
     {
-      "Company name": "Tech Innovations",
+      "Companyname": "Tech Innovations",
       "Job_Title": "Product Manager",
       "Salary_Range": "$120,000 - $150,000",
       "Office_Location": "Seattle, WA",
@@ -40,7 +40,7 @@
       "Description": "Define and prioritize product features and requirements for Tech Innovations' software products."
     },
     {
-      "Company name": "Financial Services Co.",
+      "Companyname": "Financial Services Co.",
       "Job_Title": "Financial Analyst",
       "Salary_Range": "$70,000 - $90,000",
       "Office_Location": "Boston, MA",
@@ -48,7 +48,7 @@
       "Description": "Analyze financial data and provide recommendations to support investment decisions."
     },
     {
-      "Company name": "Healthcare Innovations",
+      "Companyname": "Healthcare Innovations",
       "Job_Title": "Medical Researcher",
       "Salary_Range": "$80,000 - $100,000",
       "Office_Location": "San Diego, CA",
@@ -56,7 +56,7 @@
       "Description": "Conduct research studies to support the development of new medical treatments and therapies."
     },
     {
-      "Company name": "Software Solutions Corp.",
+      "Companyname": "Software Solutions Corp.",
       "Job_Title": "Technical Writer",
       "Salary_Range": "$60,000 - $80,000",
       "Office_Location": "Austin, TX",
@@ -64,7 +64,7 @@
       "Description": "Create technical documentation for Software Solutions' software products and services."
     },
     {
-      "Company name": "Logistics Inc.",
+      "Companyname": "Logistics Inc.",
       "Job_Title": "Supply Chain Manager",
       "Salary_Range": "$90,000 - $120,000",
       "Office_Location": "Atlanta, GA",
@@ -72,7 +72,7 @@
       "Description": "Plan and manage the movement of goods and materials through Logistics' supply chain."
     },
     {
-        "Company name": "Media Company",
+        "Companyname": "Media Company",
         "Job_Title": "Journalist",
         "Salary_Range": "$50,000 - $70,000",
         "Office_Location": "Washington, DC",
@@ -80,7 +80,7 @@
         "Description": "Report on news and events for Media Company's print, broadcast, and online media outlets."
         },
         {
-        "Company name": "Energy Corporation",
+        "Companyname": "Energy Corporation",
         "Job_Title": "Environmental Scientist",
         "Salary_Range": "$70,000 - $90,000",
         "Office_Location": "Houston, TX",
@@ -88,7 +88,7 @@
         "Description": "Conduct environmental impact assessments and develop sustainable practices for Energy Corporation's operations."
         },
         {
-        "Company name": "Fashion Brand",
+        "Companyname": "Fashion Brand",
         "Job_Title": "Fashion Designer",
         "Salary_Range": "$60,000 - $80,000",
         "Office_Location": "New York, NY",
@@ -96,7 +96,7 @@
         "Description": "Design and develop fashion products for Fashion Brand's collections and lines."
         },
         {
-        "Company name": "Consulting Firm",
+        "Companyname": "Consulting Firm",
         "Job_Title": "Management Consultant",
         "Salary_Range": "$100,000 - $130,000",
         "Office_Location": "Chicago, IL",
@@ -104,7 +104,7 @@
         "Description": "Advise clients on business strategy and operations to improve performance and profitability."
         },
         {
-        "Company name": "Automotive Manufacturer",
+        "Companyname": "Automotive Manufacturer",
         "Job_Title": "Mechanical Engineer",
         "Salary_Range": "$80,000 - $100,000",
         "Office_Location": "Detroit, MI",
@@ -112,7 +112,7 @@
         "Description": "Design and develop mechanical systems and components for Automotive Manufacturer's vehicles."
         },
         {
-        "Company name": "Online Retailer",
+        "Companyname": "Online Retailer",
         "Job_Title": "Customer Service Representative",
         "Salary_Range": "$40,000 - $50,000",
         "Office_Location": "Denver, CO",
@@ -120,7 +120,7 @@
         "Description": "Provide customer support for Online Retailer's online store and e-commerce platform."
         },
         {
-        "Company name": "Pharmaceutical Company",
+        "Companyname": "Pharmaceutical Company",
         "Job_Title": "Pharmaceutical Sales Representative",
         "Salary_Range": "$70,000 - $90,000",
         "Office_Location": "Philadelphia, PA",
@@ -144,7 +144,7 @@
         "Description": "Provide financial advisory and capital markets services for Financial Institution's clients."
         },
         {
-        "Company name": "Retailer",
+        "Companyname": "Retailer",
         "Job_Title": "Merchandising Manager",
         "Salary_Range": "$80,000 - $100,000",
         "Office_Location": "Seattle, WA",
@@ -152,7 +152,7 @@
         "Description": "Plan and execute product assortment and inventory strategies for Retailer's stores and e-commerce platform."
         },
         {
-        "Company name": "Technology Company",
+        "Companyname": "Technology Company",
         "Job_Title": "Software Engineer",
         "Salary_Range": "$100,000 - $120,000",
         "Office_Location": "San Francisco, CA",
@@ -160,7 +160,7 @@
         "Description": "Design, develop, and test software solutions for Technology Company's products and services."
         },
         {
-        "Company name": "Telecommunications Provider",
+        "Companyname": "Telecommunications Provider",
         "Job_Title": "Network Engineer",
         "Salary_Range": "$80,000 - $100,000",
         "Office_Location": "Dallas, TX",
@@ -168,7 +168,7 @@
         "Description": "Design, deploy, and maintain Telecommunications Provider's network infrastructure and services."
         },
         {
-        "Company name": "Healthcare Provider",
+        "Companyname": "Healthcare Provider",
         "Job_Title": "Registered Nurse",
         "Salary_Range": "$60,000 - $80,000",
         "Office_Location": "Atlanta, GA",
@@ -176,7 +176,7 @@
         "Description": "Provide patient care and treatment for Healthcare Provider's hospital or clinic."
         },
         {
-        "Company name": "Marketing Agency",
+        "Companyname": "Marketing Agency",
         "Job_Title": "Digital Marketing Specialist",
         "Salary_Range": "$60,000 - $80,000",
         "Office_Location": "Boston, MA",
@@ -184,7 +184,7 @@
         "Description": "Plan, execute, and optimize digital marketing campaigns for Marketing Agency's clients."
         },
         {
-        "Company name": "Insurance Company",
+        "Companyname": "Insurance Company",
         "Job_Title": "Actuary",
         "Salary_Range": "$100,000 - $120,000",
         "Office_Location": "Hartford, CT",
@@ -192,7 +192,7 @@
         "Description": "Analyze and evaluate financial risks and outcomes for Insurance Company's products and services."
         },
         {
-        "Company name": "Higher Education Institution",
+        "Companyname": "Higher Education Institution",
         "Job_Title": "Professor",
         "Salary_Range": "$80,000 - $100,000",
         "Office_Location": "Ann Arbor, MI",
@@ -200,7 +200,7 @@
         "Description": "Teach and conduct research in a specific academic discipline for Higher Education Institution's faculty."
         },
         {
-        "Company name": "Food and Beverage Company",
+        "Companyname": "Food and Beverage Company",
         "Job_Title": "Chef",
         "Salary_Range": "$50,000 - $70,000",
         "Office_Location": "Portland, OR",
@@ -208,7 +208,7 @@
         "Description": "Plan and execute menu and food preparation for Food and Beverage Company's restaurant or food service operation."
         },
         {
-        "Company name": "Hospitality Company",
+        "Companyname": "Hospitality Company",
         "Job_Title": "Hotel Manager",
         "Salary_Range": "$70,000 - $90,000",
         "Office_Location": "Miami, FL",
