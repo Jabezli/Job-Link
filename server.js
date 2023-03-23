@@ -42,18 +42,28 @@
 const express = require('express');
 const routes = require('./controllers/index');
 const sequelize = require('./config/connection');
-const bcrypt = require('bcrypt')
+const exphbs = require('express-handlebars');
+const hbs = exphbs.create({});
+const path = require('path');
+
+
 
 const app = express();
 const PORT = process.env.PORT || 3001;
 
+
+app.engine('handlebars', hbs.engine);
+app.set('view engine', 'handlebars');
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // turn on routes
-app.use('/api',routes);
+app.use(routes);
 
 // turn on connection to db and server
+//force is to drop DB
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log(`Now listening${PORT}`));
 });
+

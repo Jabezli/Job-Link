@@ -1,17 +1,13 @@
 const router = require("express").Router();
-const employer = require('./api/Employer');
+const api = require('./api/index')
+
+router.use('/api',api)
 
 
-router.use('/employer', employer)
-router.get('/', (req,res)=>{
-    res.send('hi')
-   
-})
+router.get('/homepage',(req,res)=>{
+    return res.render('homepage');
+});
 
-const apiRoutes = require("./api");
-const homeRoutes = require("./home-routes");
 
-router.use("/", homeRoutes);
-router.use("/api", apiRoutes);
 
 module.exports = router;
