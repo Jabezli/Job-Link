@@ -10,10 +10,10 @@ if (process.env.JAWSDB_URL) {
     // process.env.DB_NAME,
     // process.env.DB_USER,
     // process.env.DB_PASSWORD,
-    'employee_db',
-    'root',
-    'Mw113741@',
-    
+    "employee_db",
+    "root",
+    "dawanzi",
+
     {
       host: "localhost",
       dialect: "mysql",
@@ -23,4 +23,3 @@ if (process.env.JAWSDB_URL) {
 }
 
 module.exports = sequelize;
- 

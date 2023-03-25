@@ -1,9 +1,13 @@
-const Employer = require('./employer');
-// const jobApplication = require('./jobApplication');
-const JobPosting = require('./jobPosting');
-const User = require('./user');
-User.belongsToMany(JobPosting,{
-    through:{
-        model
-    }
-})
+const User = require("./user");
+const JobPosting = require("./jobPosting");
+
+User.hasMany(JobPosting, {
+  foreignKey: "user_id",
+  onDelete: "CASCADE",
+});
+
+JobPosting.belongsTo(User, {
+  foreignKey: "user_id",
+});
+
+module.exports = { User, JobPosting };
