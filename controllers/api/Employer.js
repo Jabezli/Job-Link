@@ -1,9 +1,9 @@
-const Employer = require("../../models/jobPosting");
+const JobPosting = require("../../models/jobPosting");
 const router = require("express").Router();
 
 router.get("/", (req, res) => {
   try {
-    Employer.findAll().then((employerData) => {
+    JobPosting.findAll().then((employerData) => {
       res.json(employerData);
     });
   } catch (error) {

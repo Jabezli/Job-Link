@@ -15,25 +15,44 @@
 // };
 
 // seedDatabase();
+// const seedUserData = require("./user_seed");
+// const seedJobPostings = require("./jobPosting_seed");
+
+
+
 
 const sequelize = require("../config/connection");
-const seedUserData = require("./user_seed");
-const seedJobPostings = require("./jobPosting_seed");
-const { User, JobPosting } = require("../models");
+// const { User, JobPosting } = require("../models");
+const JobPosting = require('../models/jobPosting')
+const User = require('../models/user')
 const jobData = require("./jobPostingTest.json");
 const userData = require("./userTest.json");
 
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
-  await JobPosting.bulkCreate(jobData);
-  await User.bulkCreate(userData, {
-    individualHooks: true,
-    returning: true,
-  });
+  const empolyers = await User.bulkCreate(userData);
+  // for(const i of Jo)
+  // await JobPosting.bulkCreate(jobData);
+  for (const job  of jobData) {
+    await JobPosting.create({
+      ...job,
+      user_id: empolyers[Math.floor(Math.random() * empolyers.length)].id,
+    });
+  }
   process.exit(0);
 };
 
 seedDatabase();
+
+
+
+
+
+
+
+
+
+
 
 // const seedAll = async () => {
 //   try {

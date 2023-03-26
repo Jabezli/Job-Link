@@ -1,101 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="./CSS/job.css">
-    <style>
-        .container {
-            border: 1px solid black;
-            padding: 20px;
-            margin: 10px;
-            background-color: #f5f5f5;
-            text-align: center;
-        }
-        
-        .row {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-    </style>
+
     <meta charset="UTF-8">
-   
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
-   <link rel="stylesheet" href="./CSS/job.css">
+    <link rel="stylesheet" href="./public/CSS/loginpageStyle.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-  <nav class="navbar bg-body-tertiary shadow">
-    <div class="container-fluid align-middle">
-        <a class="navbar-brand align-middle" href="#">
-            <img src="./svgs/link-svgrepo-com (1).svg" alt="Logo" width="42" height="39"
-                class="d-inline-block align-text-top align-middle">
-                <b>Job Link</b> 
-        </a>
-    </div>
-</nav>
-<h2 style="text-align: center;">Job Listings</h2>
+    <!-- <nav class="navbar bg-body-tertiary shadow">
+        <div class="container-fluid align-middle">
+            <a class="navbar-brand align-middle" href="#">
+                <img src="./public/svgs/link-svgrepo-com (1).svg" alt="Logo" width="42" height="39"
+                    class="d-inline-block align-text-top align-middle">
+                <b>Job Link</b>
+            </a>
+        </div>
+    </nav>
+    <h2 class="header-CSS" style="text-align: center;">Job Listings</h2>
+    <div class="d-grid    container-fluid  col-6 ">
 
-<div class="row justify-content-center">
-    <div class="container col-11">
-        <h2>Container 1</h2>
-        <ul style="list-style: none;">
-            <li>Job description</li>
-            <li>Years of experience required</li>
-            <li>Job salary</li>
-            <li><a href="#">Click here to apply</a></li>
-        </ul>
+        <button class=" border btn-CSS2 shadow justify-content-center rounded " type="button"> <b> Create new Job
+                Listing</b></button>
     </div>
-    <div class="container col-11">
-        <h2>Container 2</h2>
-        <ul style="list-style: none;">
-            <li>Job description</li>
-            <li>Years of experience required</li>
-            <li>Job salary</li>
-            <li><a href="#">Click here to apply</a></li>
-        </ul>
-    </div>
-    <div class="container col-11">
-        <h2>Container 3</h2>
-        <ul style="list-style: none;">
-            <li>Job description</li>
-            <li>Years of experience required</li>
-            <li>Job salary</li>
-            <li><a href="#">Click here to apply</a></li>
-        </ul>
-    </div>
-</div>
-<div class="row justify-content-center">
-    <div class="container col-11">
-        <h2>Container 4</h2>
-        <ul style="list-style: none;">
-            <li>Job description</li>
-            <li>Years of experience required</li>
-            <li>Job salary</li>
-            <li><a href="#">Click here to apply</a></li>
-        </ul>
-    </div>
-    <div class="container col-11">
-        <h2>Container 5</h2>
-        <ul style="list-style: none;">
-            <li>Job description</li>
-            <li>Years of experience required</li>
-            <li>Job salary</li>
-            <li><a href="#">Click here to apply</a></li>
-        </ul>
-    </div>
-    <div class="container col-11">
-        <h2>Container 6</h2>
-        <ul style="list-style: none;">
-            <li>Job description</li>
-            <li>Years of experience required</li>
-            <li>Job salary</li>
-            <li><a href="#">Click here to apply</a></li>
-        </ul>
-    </div>
-</div>
+    <section class="CreateJob">
+        <div class="round border container-CSS shadow container col-11">
+            <h1>CREATE YOUR JOB POST</h1>
+            <p>please fill out all questions</p>
+            <div class="input-group">
+                <span class="input-group-text">First and last name</span>
+                <input type="text" aria-label="First name" class="form-control postName">
+                <input type="text" aria-label="Last name" class="form-control postLastName">
+            </div>
 
-</div>
+            <b>???</b>
+
+            <input class="form-control postSalary" type="text" placeholder="Default input"
+                aria-label="default input example">
+
+            <b>job postion </b>
+
+            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+
+            <b>job description</b>
+
+            <textarea class="form-control postDescription" placeholder="Leave a short job description"
+                id="floatingTextarea2" style="height: 100px"></textarea>
+            <B></B>
+            <img class="saveJobPosting " src="./public/svgs/add-animal-cat-svgrepo-com.svg" alt="">
+        </div>
+        </div>
+    </section>
+
+    <div class="row justify-content-center ">
+        {{#each jobs as |job|}}
+        <div class=" rounded border container-CSS shadow container col-11">
+            <h2>job.postion</h2>
+            <ul style="list-style: none;">
+                <li>{{job.description}}</li>
+                <li>{{job.role}}</li>
+                <li>{{job.salary}}</li>
+                <li class="savePostforUser">save</li>
+            </ul>
+
+        </div>
+        {{#/each}}
+
+    </div>
+
+ </div> -->
+ 
+ <div class="login-box shadow border">
+    <h1>Login to JOB<img src="./public/svgs/link-svgrepo-com (1).svg" alt="">LINK</h1>
+    <form>
+      <!-- b is for bold the text. 'Required' makes to input box mandatory -->
+      <label for="username"><b>Username</b></label>
+      <input class="username shadow-sm"type="text" placeholder="Enter Username" name="username" required>
+
+      <label for="password"><b>Password</b></label>
+      <input class="password shadow-sm"type="password" placeholder="Enter Password" name="password" required>
+
+      <button class="shadow btn-Submit"type="submit">Login </button>
+    </form>
+    <!-- need to link the sign up page  -->
+    <p>Don't have an account? <a href="#">Sign up</a></p>
+  </div>
+  <script src="/js/Login.js"></script>
+
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <img src="./public/svgs/link-svgrepo-com (1).svg" class="rounded me-2" alt="...">
+        <strong class="me-auto">Job Link</strong>
+        <small>11 mins ago</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        Both areas must be filled in
+      </div>
+    </div>
+  </div>
+
 </body>
+<script src="./public/js/Login.js"></script>
+
 </html>

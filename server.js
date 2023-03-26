@@ -40,6 +40,7 @@
 //   app.listen(PORT, () => console.log("Now listening"));
 // });
 const express = require('express');
+const session = require('express-session')
 const routes = require('./controllers/index');
 const sequelize = require('./config/connection');
 const exphbs = require('express-handlebars');
@@ -51,7 +52,13 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3001;
 
+const sess = {
+  secret:'Butter stick Coraline',
+  resave: false,
+  saveUnitialized: false,
+}
 
+app.use(session(sess));
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 app.use(express.static(path.join(__dirname, 'public')));
