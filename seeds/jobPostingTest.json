@@ -5,8 +5,8 @@
     "Salary_Range": "> 200K",
     "Office_Location": "Culver City",
     "Years_of_Experience": "5 years",
-    "Description": "Come to our company to build a cool application",
-    "user_id": "1"
+    "Description": "Come to our company to build a cool application"
+
     },
     {
     "Companyname": "Bpple",
@@ -14,8 +14,8 @@
     "Salary_Range": "> 500K",
     "Office_Location": "Culver City",
     "Years_of_Experience": "10 years",
-    "Description": "Come to our company to build a cool application",
-    "user_id": "2"
+    "Description": "Come to our company to build a cool application"
+
     },
     {
     "Companyname": "Apple",
@@ -23,7 +23,7 @@
     "Salary_Range": "> 1000K",
     "Office_Location": "Culver City",
     "Years_of_Experience": "15 years",
-    "Description": "Come to our company to build a cool application",
-    "user_id": "3"
+    "Description": "Come to our company to build a cool application"
+  
     }
     ]
