@@ -12,7 +12,7 @@ if (process.env.JAWSDB_URL) {
     // process.env.DB_PASSWORD,
     "employee_db",
     "root",
-    "Mw113741@",
+    "",
    
 
     {

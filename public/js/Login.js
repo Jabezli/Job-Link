@@ -5,19 +5,20 @@ const btnSignUP = document.querySelector('.btn-SignUp')
 const loginForm = async (event) => {
     event.preventDefault();
     console.log('hi');
-    const txtusername = document.querySelector('.username').value.trim();
-    const txtpassword = document.querySelector('.password').value.trim();
-if (txtpassword == "") {
+    const username = document.querySelector('.username').value.trim();
+    const password = document.querySelector('.password').value.trim();
+    const hi = JSON.stringify({ username, password });
+    console.log(hi);
+if (password == "") {
    btnLoginSumit.textContent = 'both text fields must be filled'
  return
 
 }
-console.log('hie3');
-    if (txtusername && txtpassword) {
-        console.log('hellp');
-        const response = await fetch('/api/users/login', {
+
+    if (username && password) {
+        const response = await fetch('http://localhost:3001/api/user/login', {
             method: 'POST',
-            body: JSON.stringify({ txtpassword, txtpassword }),
+            body: JSON.stringify({ username, password }),
             headers: { 'Content-Type': 'application/json' },
         });
 
@@ -31,12 +32,12 @@ console.log('hie3');
 
 async function signUp(e) {
     e.preventDefault();
-    const txtusername = document.querySelector('.username').value.trim();
-    const txtpassword = document.querySelector('.password').value.trim();
-    if (txtusername && txtpassword) {
+    const username = document.querySelector('.username').value.trim();
+    const password = document.querySelector('.password').value.trim();
+    if (username && password) {
         const response = await fetch('/api/users/login', {
             method: 'POST',
-            body: JSON.stringify({ txtpassword, txtpassword }),
+            body: JSON.stringify({ password, username }),
             headers: { 'Content-Type': 'application/json' },
         });
 

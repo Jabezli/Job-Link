@@ -4,26 +4,31 @@ const jobPosting = require('../models/jobPosting');
 const JobPosting = require('../models/jobPosting');
 
 
-
+router.get("/results ", (req, res) => {
+    try {
+      JobPosting.findAll().then((userData) => {
+        res.json(userData);
+      });
+    } catch (error) {
+      res.status(400).json({
+        status: "error",
+        error: error.message,
+      });
+    }
+  });
 router.get('/', async (req, res) => {
     const jobData = await jobPosting.findAll().catch((err) => {
         res.status(500).json(err)
     });
     const mutijobs = jobData.map((job) => job.get({ palin: true }));
-    res.render('results', { mutijobs }) 
+    res.render('results', { mutijobs, loggedIn: req.session.loggedIn }) 
 
 req.session.save(()=>{
 
 })
 })
-// router.get("/", async (req, res) => {
-//     try {
-//         const userData = await User.create(req.body);
-//         res.status(200).json(userData);
-//     } catch (error) {
-//         res.status(400).json(error);
-//     }
-// });
+
+
 router.get("/users", async (req, res) => {
     try {
         User.findAll().then((userData) => {
@@ -36,8 +41,9 @@ router.get("/users", async (req, res) => {
         });
     }
 });
+
+
 router.post("/create", async (req, res) => {
-    console.log(res.body, 'hello matthew');
     try {
         const newProject = await JobPosting.create(req.body);
 
