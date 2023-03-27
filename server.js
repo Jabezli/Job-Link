@@ -44,6 +44,8 @@ const session = require('express-session')
 const routes = require('./controllers/index');
 const sequelize = require('./config/connection');
 const exphbs = require('express-handlebars');
+const SequelizeStore = require("connect-session-sequelize")(session.Store);
+
 const hbs = exphbs.create({});
 const path = require('path');
 
@@ -53,10 +55,16 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 const sess = {
-  secret:'Butter stick Coraline',
+  secret: 'Butter stick Coraline',
+  cookie: {
+    maxAge: 42 * 60 * 60 * 1000,
+  },
   resave: false,
-  saveUnitialized: false,
-}
+  saveUnitialized: true,
+  store: new SequelizeStore({
+    db: sequelize,
+  }),
+};
 
 app.use(session(sess));
 app.engine('handlebars', hbs.engine);

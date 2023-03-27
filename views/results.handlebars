@@ -1,6 +1,6 @@
+{{#if loggedIn}}
 <h2 class="header-CSS" style="text-align: center;">Job Listings</h2>
 <div class="d-grid    container-fluid  col-10 ">
-
   <button class="btn border btn-CSS2 shadow justify-content-center rounded-pill " type="button">Create new Job
     Listing</button>
 </div>
@@ -63,4 +63,11 @@
 
 </div>
 <script src="/js/resultpage.js"></script>
+
+{{else}}
+<section class="sectionREOUTE">
+<a href="/login"   please login></a>
+</section>
+<img src="/svgs/love-svgrepo-com.svg" alt="" srcset="">
+{{/if}}
 {{!-- </div> --}}
