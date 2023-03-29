@@ -50,7 +50,7 @@ JobPosting.init(
 
   {
     sequelize,
-    timestams: false,
+    timestams: true,
     freezeTableName: true,
     underscored: true,
     modelName: "jobPosting",
