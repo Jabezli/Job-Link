@@ -1,7 +1,7 @@
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection");
 
-class JobPosting extends Model { }
+class JobPosting extends Model {}
 
 JobPosting.init(
   {
@@ -35,11 +35,15 @@ JobPosting.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+    Email: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
     user_id: {
       type: DataTypes.UUID,
       references: {
         model: "user",
-        key: 'id',
+        key: "id",
       },
     },
   },
