@@ -24,16 +24,10 @@ const JobPosting = require("../models/jobPosting");
 const User = require("../models/user");
 const jobData = require("./jobPostingTest.json");
 const userData = require("./userTest.json");
-const { v4: uuidv4 } = require("uuid");
 
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
-  const usersWithUuid = userData.map((user) => ({
-    ...user,
-    id: uuidv4(),
-  }));
-
-  const empolyers = await User.bulkCreate(usersWithUuid);
+  const empolyers = await User.bulkCreate(userData);
   // for(const i of Jo)
   // await JobPosting.bulkCreate(jobData);
   for (const job of jobData) {
