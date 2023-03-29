@@ -1,4 +1,4 @@
- <div class="login-box shadow border">
+ <div class="login-box loginform shadow border">
           <h1>Login to JOB<img src="/svgs/link-svgrepo-com (1).svg" alt="">LINK</h1>
           <form>
             <!-- b is for bold the text. 'Required' makes to input box mandatory -->
@@ -11,6 +11,24 @@
             <button class="shadow btn-Submit"type="submit">Login </button>
           </form>
           <!-- need to link the sign up page  -->
-          <p>Don't have an account? <a href="#">Sign up</a></p>
+          <p>Don't have an account? <a class="signuplink"href="#">Sign up</a></p>
         </div>
-        <script src="/js/Login.js"></script>
+
+
+
+         <div class="login-box signupSelector shadow border">
+          <h1>Sign Up to JOB<img src="/svgs/link-svgrepo-com (1).svg" alt="">LINK</h1>
+          <form>
+            <!-- b is for bold the text. 'Required' makes to input box mandatory -->
+            <label for="username"><b>Username</b></label>
+            <input class="Signusername shadow-sm"type="text" placeholder="Enter Username" name="username" required>
+    
+            <label for="password"><b>Password</b></label>
+            <input class="Signpassword shadow-sm"type="password" placeholder="Enter Password" name="password" required>
+    
+            <button class="shadow btn-SignUp"type="submit">Login </button>
+          </form>
+          <!-- need to link the sign up page  -->
+          <p>Have an account? <a   class="signuplink"href="#">Login</a></p>
+        </div>
+        <script src="/js/Login.js"></script>  
