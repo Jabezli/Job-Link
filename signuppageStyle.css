@@ -1,0 +1,90 @@
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F7F7F7;
+  }
+  
+  /* Navigation bar styles */
+  nav.navbar {
+    background-color: #F7F7F7;
+    border-bottom: 1px solid #DDD;
+  }
+  
+  nav.navbar img {
+    margin-right: 0.5rem;
+  }
+  
+  /* Signup box styles */
+  div.signup-box {
+    width: 400px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #FFF;
+    border-radius: 0.5rem;
+  }
+  
+  div.signup-box h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  form input {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #F8F8F8;
+  }
+  
+  form input:focus {
+    outline: none;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  }
+  
+  form button {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #377dff;
+    color: #FFF;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  }
+  
+  form button:hover {
+    background-color: #2f6fe9;
+  }
+  
+  form p {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  form a {
+    color: #377dff;
+  }
+  
+  /* Shadow styles */
+  .shadow {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  }
+  
+  .shadow-sm {
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.15);
+  }
+  
