@@ -7,8 +7,7 @@ const pageloginForm = document.querySelector('.loginform');
 SignUpForm.style.display = 'none';
 hi.addEventListener('click', displayForms)
 async function displayForms(){
-    //  ageloginForm.style.display = 'none';
-    //  SignUppForm.style.display = 'block';
+  
 
      if (pageloginForm.style.display === 'none') {
         pageloginForm.style.display = 'block';
@@ -69,6 +68,6 @@ async function signUp(e) {
 
 }
 
-git 
+
 btnLoginSumit.addEventListener('click', loginForm);
  btnSignUP.addEventListener('click', signUp)

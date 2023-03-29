@@ -68,7 +68,6 @@ img {
 
 /* HOME PAGE */
 .btn-CSS:hover {
-  /* background-color: #DEDCDC; */
   background-color: var(--purple);
   font-weight: 600;
   transition: 100ms;
@@ -86,7 +85,7 @@ img {
   font-weight: #262626;
   color: #262626;
   border: 1px #DEDCDC solid;
-  /* text-align: right; */
+
 }
 
 .h1-HOME {
@@ -102,6 +101,7 @@ img {
 .container-CSS {
   margin-top: 25px;
   background-color:#F8F8F8;
+  padding: 20px
   ;
 }
 
