@@ -1,6 +1,6 @@
+{{#if loggedIn}}
 <h2 class="header-CSS" style="text-align: center;">Job Listings</h2>
 <div class="d-grid    container-fluid  col-10 ">
-
   <button class="btn border btn-CSS2 shadow justify-content-center rounded-pill " type="button">Create new Job
     Listing</button>
 </div>
@@ -63,4 +63,17 @@
 
 </div>
 <script src="/js/resultpage.js"></script>
+
+{{else}}
+<section class="sectionROUTE ">
+ <div class="card shadow border position-absolute top-50 start-50 translate-middle" style="width: 18rem;">
+  <h1>MUST LOG IN!</h1>
+        <img src="/svgs/grooming-1801287.svg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text"> 
+            Please <a href="http://localhost:3001/login"> login</a> to access for the homepage
+          </p>
+        </div>
+      </div>
+{{/if}}
 {{!-- </div> --}}

@@ -1,7 +1,8 @@
 const router = require("express").Router();
 const User = require("../../models/user");
 
-router.get("/users", (req, res) => {
+//showing users in json
+router.get("/", (req, res) => {
   try {
     User.findAll().then((userData) => {
       res.json(userData);
@@ -13,46 +14,56 @@ router.get("/users", (req, res) => {
     });
   }
 });
-router.get("/login", async (req, res) => {
-  // This method renders the 'dish' template, and uses params to select the correct dish to render in the template, based on the id of the dish.
-  // Now, we have access to a dish description in the 'dish' template.
-  return res.render("login");
-});
-
-router.post("/hi", async (req, res) => {
+//creating new user
+router.post("/", async (req, res) => {
   try {
     const userData = await User.create(req.body);
+
+    req.session.save(()=>{
+      req.session.loggedIn = true;
+    })
     res.status(200).json(userData);
+
+
   } catch (error) {
     res.status(400).json(error);
   }
 });
 
-router.post("/login", async (req, res) => {
+//login route
+router.post('/login', async (req, res) => {
   try {
-    const userData = await User.findOne({
-      where: { username: req.body.username },
+    const UserData = await User.findOne({
+      where: {
+        username: req.body.username,
+      },
     });
-    if (!userData) {
+
+    if (!UserData) {
       res
-        .status(404)
-        .json({ message: "login failed password or email was incorrect" });
+        .status(400)
+        .json({ message: 'Incorrect email or password. Please try again!' });
       return;
     }
-    const validPassword = await bcrypt.compare(
-      req.body.password,
-      userData.password
-    );
+    const validPassword = await UserData.checkPassword(req.body.password);
 
     if (!validPassword) {
       res
         .status(400)
-        .json({ message: "login failed password or email was incorrect" });
+        .json({ message: 'Incorrect email or password. Please try again!' });
       return;
     }
-    res.status(200).json({ message: "logged in worked , You ARE IN!!!" });
-  } catch (error) {
-    res.status(500).json(error);
+
+    req.session.save(() => {
+      req.session.loggedIn = true;
+
+      res
+        .status(200)
+        .json({ user: UserData, message: 'You are now logged in!' });
+    });
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
   }
 });
 
