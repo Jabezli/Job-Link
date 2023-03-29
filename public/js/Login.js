@@ -67,6 +67,6 @@ async function signUp(e) {
 
 }
 
-
+git 
 btnLoginSumit.addEventListener('click', loginForm);
  btnSignUP.addEventListener('click', signUp)
