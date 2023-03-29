@@ -60,6 +60,11 @@ body {
 img {
   height: 30px;
 }
+.sectionROUTE img{
+  height: 350px;
+  padding: 15px;
+
+}
 
 /* HOME PAGE */
 .btn-CSS:hover {

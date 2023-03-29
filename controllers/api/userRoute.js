@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const User = require("../../models/user");
 
-
+//showing users in json
 router.get("/", (req, res) => {
   try {
     User.findAll().then((userData) => {
@@ -14,7 +14,7 @@ router.get("/", (req, res) => {
     });
   }
 });
-
+//creating new user
 router.post("/", async (req, res) => {
   try {
     const userData = await User.create(req.body);
@@ -30,6 +30,7 @@ router.post("/", async (req, res) => {
   }
 });
 
+//login route
 router.post('/login', async (req, res) => {
   try {
     const UserData = await User.findOne({
@@ -44,7 +45,6 @@ router.post('/login', async (req, res) => {
         .json({ message: 'Incorrect email or password. Please try again!' });
       return;
     }
-
     const validPassword = await UserData.checkPassword(req.body.password);
 
     if (!validPassword) {

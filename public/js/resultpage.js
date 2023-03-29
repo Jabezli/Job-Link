@@ -7,7 +7,6 @@ formJobPost.style.display = "none";
 btnCreatePost.style.display = "block";
 
 async function PostingJobsForFetch(e) {
-
     e.preventDefault()
     btnCreatePost.style.display = "block";
     const Companyname = document.querySelector('.postCompany').value;
@@ -16,22 +15,12 @@ async function PostingJobsForFetch(e) {
     const Description = document.querySelector('.postDescription').value;
     const Years_of_Experience = document.querySelector('.postExperience').value;
     const Office_Location = document.querySelector('.postEmail').value;
-     const hello =  JSON.stringify({
-                Companyname,
-                Job_Title,
-                Salary_Range,
-                Office_Location,
-                Years_of_Experience,
-                Description,
-            })
-     console.log(hello);
-
+    
     if (!Companyname || !Job_Title || !Salary_Range || !Description) {
         alert('please fill out each question')
         return
     }
     else {
-        console.log('its in');
         const response = await fetch('http://localhost:3001/create', {
             method: 'POST',
             body: JSON.stringify({
@@ -46,8 +35,6 @@ async function PostingJobsForFetch(e) {
         });
 
         if (response.ok) {
-
-            console.log('hi.iiii');
             document.location.replace('/')
         } else {
             alert('Failed to add Job Post');
@@ -67,21 +54,6 @@ function ShowJobPost() {
 async function SaveSpecificPost(e) {
 
     const target = e.target.dataset.value;
-    console.log(target);
-    // if (target !== undefined) {
-
-    // //     const response = await fetch('/?/?/?', {
-    // //         method: 'PUT',
-    // //         body: JSON.stringify({
-    // //             id,
-    // //         })
-    // //     });
-    // //     if (response.ok) {
-    // //         document.location.replace('/')
-    // //     } else {
-    // //         alert('Failed to add Job Post');
-    // //     }
-    //  }
 }
 
 btnCreatePost.addEventListener('click', ShowJobPost);
