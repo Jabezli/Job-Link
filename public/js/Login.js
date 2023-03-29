@@ -47,6 +47,8 @@ const loginForm = async (event) => {
     }
 };
 
+
+
 async function signUp(e) {
     e.preventDefault();
     const username = document.querySelector('.Signusername').value.trim();
