@@ -1,29 +1,42 @@
 [
     {
-    "Companyname": "Apple",
-    "Job_Title": "Senior Developer",
-    "Salary_Range": "> 200K",
-    "Office_Location": "Culver City",
-    "Years_of_Experience": "5 years",
-    "Description": "Come to our company to build a cool application"
-
+        "Companyname": "Google",
+        "Job_Title": "Senior Data Analyst",
+        "Salary_Range": "120k-150k",
+        "Office_Location": "New York City",
+        "Years_of_Experience": "5+ years",
+        "Description": "Google is looking for a Senior Data Analyst to join our New York City team! The ideal candidate will have 5+ years of experience in data analysis and a strong understanding of statistics and data modeling."
     },
     {
-    "Companyname": "Bpple",
-    "Job_Title": "Seniorrrrrr Developer",
-    "Salary_Range": "> 500K",
-    "Office_Location": "Culver City",
-    "Years_of_Experience": "10 years",
-    "Description": "Come to our company to build a cool application"
-
+        "Companyname": "Microsoft",
+        "Job_Title": "Software Engineer",
+        "Salary_Range": "90k-120k",
+        "Office_Location": "Seattle",
+        "Years_of_Experience": "3-5 years",
+        "Description": "Microsoft is seeking a Software Engineer to join our team in Seattle! The ideal candidate will have 3-5 years of experience in software development, with a strong background in C# and .NET."
     },
     {
-    "Companyname": "Apple",
-    "Job_Title": "Seniorrrrrrrerere Developer",
-    "Salary_Range": "> 1000K",
-    "Office_Location": "Culver City",
-    "Years_of_Experience": "15 years",
-    "Description": "Come to our company to build a cool application"
-  
+        "Companyname": "Amazon",
+        "Job_Title": "Product Manager",
+        "Salary_Range": "150k-200k",
+        "Office_Location": "San Francisco",
+        "Years_of_Experience": "7+ years",
+        "Description": "Amazon is looking for an experienced Product Manager to join our San Francisco team! The ideal candidate will have 7+ years of experience in product management and a strong understanding of e-commerce and retail industries."
+    },
+    {
+        "Companyname": "Facebook",
+        "Job_Title": "Machine Learning Engineer",
+        "Salary_Range": "200k+",
+        "Office_Location": "Menlo Park",
+        "Years_of_Experience": "10+ years",
+        "Description": "Facebook is seeking a Machine Learning Engineer to join our team in Menlo Park! The ideal candidate will have 10+ years of experience in machine learning and a strong understanding of natural language processing and computer vision."
+    },
+    {
+        "Companyname": "Tesla",
+        "Job_Title": "Senior Electrical Engineer",
+        "Salary_Range": "150k-180k",
+        "Office_Location": "Fremont",
+        "Years_of_Experience": "5+ years",
+        "Description": "Tesla is looking for a Senior Electrical Engineer to join our team in Fremont! The ideal candidate will have 5+ years of experience in electrical engineering and a strong understanding of power electronics and circuit design."
     }
-    ]
+]
