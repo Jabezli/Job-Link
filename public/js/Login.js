@@ -32,7 +32,7 @@ const loginForm = async (event) => {
     }
 
     if (username && password) {
-        const response = await fetch('http://localhost:3001/api/user/login', {
+        const response = await fetch('https://pure-lowlands-78827.herokuapp.com/api/user/login', {
             method: 'POST',
             body: JSON.stringify({ username, password }),
             headers: { 'Content-Type': 'application/json' },
@@ -53,7 +53,7 @@ async function signUp(e) {
     const username = document.querySelector('.Signusername').value.trim();
     const password = document.querySelector('.Signpassword').value.trim();
     if (username && password) {
-        const response = await fetch('http://localhost:3001/api/user', {
+        const response = await fetch('https://pure-lowlands-78827.herokuapp.com/api/user', {
             method: 'POST',
             body: JSON.stringify({ password, username }),
             headers: { 'Content-Type': 'application/json' },
