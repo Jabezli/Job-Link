@@ -5,6 +5,7 @@ const JobPosting = require("../models/jobPosting");
 const User = require("../models/user");
 const jobData = require("./jobPostingTest.json");
 const userData = require("./userTest.json");
+const { v4: uuidv4 } = require("uuid");
 
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });

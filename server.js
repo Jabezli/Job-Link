@@ -15,7 +15,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 const sess = {
-  secret: 'Butter stick Coraline',
+  secret: process.env.DB_secret,
   cookie: {
     maxAge: 42 * 60 * 60 * 1000,
   },
