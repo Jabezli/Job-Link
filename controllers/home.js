@@ -24,7 +24,7 @@ router.get('/', async (req, res) => {
 
     const mutijobs = jobData.map((job) => {
         const formattedJob = job.get({ plain: true });
-        formattedJob.createdAt = moment(job.createdAt).calendar();
+        formattedJob.createdAt = moment(job.createdAt).format("MMM Do YY");
         formattedJob.updatedAt = moment(job.updatedAt).startOf('day').fromNow()
         return formattedJob;
     });
