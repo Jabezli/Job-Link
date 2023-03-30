@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const jobPosting = require('../models/jobPosting');
 const moment = require('moment');
-
+// moment.locale('en')
 // homepage
 router.get("/results", (req, res) => {
     try {
@@ -24,7 +24,7 @@ router.get('/', async (req, res) => {
 
     const mutijobs = jobData.map((job) => {
         const formattedJob = job.get({ plain: true });
-        formattedJob.createdAt = moment(job.createdAt).startOf('day').fromNow()
+        formattedJob.createdAt = moment(job.createdAt).calendar();
         formattedJob.updatedAt = moment(job.updatedAt).startOf('day').fromNow()
         return formattedJob;
     });
