@@ -38,6 +38,7 @@ Job-Link is a simple job listing web application built with Flask and MongoDB. I
 2. Sign up for an account or login if you already have one
 3. View job listings or create a new job listing
 4. Apply to job listings by clicking the "Apply" button
+5. To visit the website, please [Click Here](https://secret-inlet-92567.herokuapp.com/)
 
 ## Contributing
 
