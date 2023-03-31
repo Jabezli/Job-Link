@@ -4,7 +4,7 @@ const routes = require("./controllers/index");
 const sequelize = require("./config/connection");
 const exphbs = require("express-handlebars");
 const SequelizeStore = require("connect-session-sequelize")(session.Store);
-const { v4: uuidv4 } = require("uuid");
+
 const hbs = exphbs.create({});
 const path = require("path");
 
