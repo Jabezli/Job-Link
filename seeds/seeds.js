@@ -1,12 +1,9 @@
-
-
 const sequelize = require("../config/connection");
 const JobPosting = require("../models/jobPosting");
 const User = require("../models/user");
 const jobData = require("./jobPostingTest.json");
 const userData = require("./userTest.json");
 const { v4: uuidv4 } = require("uuid");
-
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
   const usersWithUuid = userData.map((user) => ({
@@ -18,12 +15,10 @@ const seedDatabase = async () => {
   for (const job of jobData) {
     await JobPosting.create({
       ...job,
-      user_id: empolyers[Math.floor(Math.random() * empolyers.length)].id
+      user_id: empolyers[Math.floor(Math.random() * empolyers.length)].id,
     });
   }
   process.exit(0);
 };
 
 seedDatabase();
-
-
