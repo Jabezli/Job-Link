@@ -17,7 +17,7 @@ const sess = {
     maxAge: 42 * 60 * 60 * 1000,
   },
   resave: false,
-  saveUnitialized: true,
+  saveUninitialized: true,
   store: new SequelizeStore({
     db: sequelize,
   }),
