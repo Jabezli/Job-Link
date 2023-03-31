@@ -15,7 +15,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 const sess = {
-  secret: 'Butter stick Coraline',
+  secret:" process.env.DB_secret",
   cookie: {
     maxAge: 42 * 60 * 60 * 1000,
   },
@@ -38,7 +38,7 @@ app.use(routes);
 
 // turn on connection to db and server
 //force is to drop DB
-sequelize.sync({ force: false }).then(() => {
+sequelize.sync({ force: true }).then(() => {
   app.listen(PORT, () => console.log(`Now listening${PORT}`));
 });
 

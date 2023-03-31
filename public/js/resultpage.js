@@ -21,7 +21,7 @@ async function PostingJobsForFetch(e) {
     alert("please fill out each question");
     return;
   } else {
-    const response = await fetch("http://localhost:3001/create", {
+    const response = await fetch("https://pure-lowlands-78827.herokuapp.com/create", {
       method: "POST",
       body: JSON.stringify({
         Companyname: Companyname,
